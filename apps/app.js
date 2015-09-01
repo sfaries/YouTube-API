@@ -19,18 +19,21 @@ $(function(){
 		url = 'https://www.googleapis.com/youtube/v3/search'
 
 		$.getJSON(url, params, function(data){
-			showResults(data.Search);
+			showResults(data);
 		});
 	}
 
 
 	function showResults(results){
 
+		/*
 		var html = "";
 		$.each(results, function(index, value){
 			html += '<p>' + value.Title + '</p>';
 			console.log(value.Title);
 		});
 		$('#search-results').html(html);
+	*/
+	console.log(results);
 	}
 })
